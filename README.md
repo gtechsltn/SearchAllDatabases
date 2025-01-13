@@ -91,7 +91,10 @@ BEGIN
     ORDER BY [database],[schema],[table],[column];
 END
 GO
+```
 
+# SP: SearchAllDatabases: Demo
+```
 -- generate an error because this is not a sensible search:
 EXEC dbo.SearchAllDatabases @SearchTerm = N'%';
 GO
